@@ -66,6 +66,11 @@ disableSystemRestore is on
 DusmSvc
 
 # responsible for managing and handling storage-related operations in SSD
+# The service helps with:
+# Managing storage devices and volumes.
+# Implementing features like Storage Spaces, which combines multiple physical drives,
+into a single virtual drive for redundancy or performance improvements.
+Assisting in detecting and handling storage hardware failures.
 # reason of disabling: waste of psace
 # AKA (explain it better)
 StorSvc
@@ -82,10 +87,17 @@ BthAvctpSvc
 
 # responsible for managing graphical sessions and visual effects, such as window transparency, animations, and rendering
 # reason of disabling: improve the performance
+# In essence, the DispBrokerDesktopSvc
+# service helps facilitate the smooth operation of desktop virtualization
+# by managing the connection to the virtual desktop for users, allowing 
+# them to work in remote or virtualized environments as if they were 
+# working on a physical machine. It is part of Windows 10 and newer 
+# versions, particularly in enterprise or remote work scenarios.
 # AKA explain it better
 DispBrokerDesktopSvc
 
 # peer-to-peer update sharing
+# The DoSvc service stands for Delivery Optimization Service in Windows. Its main purpose is to manage and optimize the delivery of updates, apps, and other content from Microsoft to your device. Specifically, it is used to download Windows updates and apps more efficiently by allowing your system to receive updates not just from Microsoft servers, but also from other devices on the local network or the internet.
 # reason of disabling: improve the bandwith
 # AKA explain it better
 DoSvc
